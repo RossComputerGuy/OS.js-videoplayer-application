@@ -1,0 +1,18 @@
+{
+  "type": "application",
+  "name": "VideoPlayer",
+  "category": "multimedia",
+  "title": {
+    "en_EN": "Video Player"
+  },
+  "description": {
+    "en_EN": "Video Player"
+  },
+  "files": [
+    "main.js",
+    "main.css"
+  ],
+  "mimes": [
+    "^video\/(.*)"
+  ]
+}
