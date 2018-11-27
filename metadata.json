@@ -2,6 +2,7 @@
   "type": "application",
   "name": "VideoPlayer",
   "category": "multimedia",
+  "icon": "icon.png",
   "title": {
     "en_EN": "Video Player"
   },

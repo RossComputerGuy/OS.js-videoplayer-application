@@ -7,7 +7,7 @@ import {
 } from "hyperapp";
 
 import {
-	Box,BoxContainer,Menubar,MenubarItem,Video
+	Box,BoxContainer,Button,Icon,Menubar,MenubarItem,Video
 } from "@osjs/gui";
 
 const createAboutDialog = core => {
@@ -41,8 +41,9 @@ const view = (core,proc,win) => (state,actions) => h(Box,{},[
 		h(MenubarItem,{ onclick: ev => actions.menu(ev) }, "File"),
 		h(MenubarItem,{ onclick: ev => createAboutDialog(core) },"About")
 	]),
-	h(BoxContainer,{ grow: 1, shrink: 1 },[
-		state.video ? h(Video,{ src: state.video.url, onload: (ev) => win.resizeFit(ev.target) }) : null
+	h(Box,{ grow: 1, shrink: 1 },[
+		state.video ? h(Video,{ src: state.video.url, onload: ev => win.resizeFit(ev.target) }) : null
+		/* TODO: custom controls */
 	].filter(i => !!i)),
 ]);
 
@@ -60,6 +61,7 @@ const register = (core,args,options,metadata) => {
 	proc.createWindow({
 		id: "VideoPlayerWindow",
 		title: metadata.title.en_EN,
+		icon: proc.resource(metadata.icon || "icon.png"),
 		dimension: { width: 640, height: 480 }
 	}).on("destroy",() => proc.destroy())
 		.on("render",win => win.focus())
