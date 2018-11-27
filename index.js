@@ -13,7 +13,7 @@ import {
 const createAboutDialog = core => {
 	core.make("osjs/dialogs").create({
 		buttons: ["ok"],
-		window: { title: "Send Message", dimension: { width: 500, height: 200 } }
+		window: { title: "About", dimension: { width: 500, height: 200 } }
 	},dialog => {
 		return dialog.app.getState();
 	},(btn,value) => {
