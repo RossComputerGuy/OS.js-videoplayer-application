@@ -11,7 +11,8 @@
   },
   "files": [
     "main.js",
-    "main.css"
+    "main.css",
+    "icon.png"
   ],
   "mimes": [
     "^video\/(.*)"
