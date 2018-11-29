@@ -6,5 +6,5 @@ A video player application for OS.js V3.
 In your OS.js V3 install.
 ```
 $ npm install osjs-videoplayer-application
-$ npm run package:discovery
+$ npm run package:discover
 ```
