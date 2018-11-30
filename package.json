@@ -13,6 +13,12 @@
     "copy-webpack-plugin": "^4.6.0",
     "hyperapp": "^1.2.9"
   },
+  "keywords": [
+  	"osjs",
+  	"os.js",
+  	"video player",
+  	"videos"
+  ],
   "devDependencies": {
     "@babel/core": "^7.0.0-rc.1",
     "@babel/plugin-transform-runtime": "^7.0.0-rc.1",
@@ -35,7 +41,7 @@
     "type": "package"
   },
   "description": "A video player application for OS.js V3.",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "main": "index.js",
   "repository": {
     "type": "git",
