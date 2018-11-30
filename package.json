@@ -41,7 +41,7 @@
     "type": "package"
   },
   "description": "A video player application for OS.js V3.",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "main": "index.js",
   "repository": {
     "type": "git",
